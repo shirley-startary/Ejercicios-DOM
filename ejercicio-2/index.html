@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mensaje por Clase</title>
+  </head>
+  <body>
+      <h1 class="titulo">Esto es un Titulo</h1>
+      <p class="mensaje">Lorem ipsum dolor sit amet, consectetur adipsicing elit. Porro, perspiciatis commodi excepturi numquam
+         delectus natus aspernatur alias, at consequatur perferendis dignissimos ommnis. <a href="#">Soy un enlace</a></p>
+      <img src="http://lorempixel.com/output/nature-q-c-301-301-3.jpg" alt="" class="mensaje">
+      <p id="parrafo">Culpa placeat cum enim inventore asperiores unde sit fugiat ea aliquam modi esse nostrum magni, eum,
+        repellendus sint at aperiam hic dolorum!</p>
+      <span class="mensaje"></span>
+      <img src="http://lorempixel.com/output/city-q-c-301-301-9.jpg" alt="" class="mensaje">
+
+      <script>
+        //Escribe aqui tu codigo JavaScript
+        var cantidadClass = document.getElementsByClassName("mensaje").length;
+        console.log(cantidadClass);
+        function cantidadElementosClass(){
+          if(cantidadClass<=1){
+            alert("Es muy Poco");
+          }else if(cantidadClass>=2&&cantidadClass<4){
+            alert("No está mal");
+          }else {
+            alert("Son muchos!");
+          }
+        }
+        cantidadElementosClass();
+      </script>
+
+  </body>
+</html>
